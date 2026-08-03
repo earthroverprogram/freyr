@@ -2,9 +2,7 @@
 	"name": "R (rocker/r-ver base)",
 	"image": "ghcr.io/rocker-org/devcontainer/geospatial:4.4",
 	"features": {
-		"ghcr.io/devcontainer-community/devcontainer-features/sshd:1": {
-			"port": "2222"
-		}
-		},
-		"postCreateCommand": "R -q -e 'renv::install()'"
+		"ghcr.io/devcontainers/features/github-cli:1": {}
+	},
+	"postCreateCommand": "R -q -e 'renv::install()'"
 }
