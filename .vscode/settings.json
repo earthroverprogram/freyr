@@ -1,3 +1,6 @@
 {
-    "kernelSupervisor.logLevel": "info"
+  "files.exclude": {
+    "snowflake.log": true,
+    "vignettes/.quarto-preview": true
+  }
 }

@@ -1,0 +1,56 @@
+---
+title: "Exploring the Cars Dataset"
+author: "Joe Collins"
+output:
+  html_document:
+    toc: true
+    code_folding: hide
+---
+
+# Introduction
+
+The `cars` dataset is included with R. It contains the speed of cars and the distances taken to stop.
+
+## Load the data
+
+```{r}
+data(cars)
+
+head(cars)
+summary(cars)
+```
+
+## Scatter Plot
+
+```{r}
+plot(
+  cars$speed,
+  cars$dist,
+  pch = 19,
+  xlab = "Speed (mph)",
+  ylab = "Stopping Distance (ft)",
+  main = "Cars Dataset"
+)
+```
+
+## Linear Regression
+
+```{r}
+model <- lm(dist ~ speed, data = cars)
+
+summary(model)
+```
+
+## Regression Plot
+
+```{r}
+plot(
+  cars$speed,
+  cars$dist,
+  pch = 19,
+  xlab = "Speed (mph)",
+  ylab = "Stopping Distance (ft)"
+)
+
+abline(model, col = "red", lwd = 2)
+```
