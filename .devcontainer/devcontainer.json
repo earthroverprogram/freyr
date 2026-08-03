@@ -1,8 +1,10 @@
 {
 	"name": "R (rocker/r-ver base)",
 	"image": "ghcr.io/rocker-org/devcontainer/geospatial:4.4",
-	"postCreateCommand": "R -q -e 'renv::install()'",
-	"mounts": [
-		"source=${localEnv:USERPROFILE}/.ssh,target=/root/.ssh,type=bind,consistency=cached"
-	]
+	"features": {
+		"ghcr.io/devcontainers/features/ssh-agent:1": {
+			"version": "latest"
+		},
+		"postCreateCommand": "R -q -e 'renv::install()'"
+	}
 }
