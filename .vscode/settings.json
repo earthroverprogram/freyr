@@ -2,5 +2,7 @@
   "files.exclude": {
     "snowflake.log": true,
     "vignettes/.quarto-preview": true
-  }
+},
+"quarto.render.previewType": "external",
+"quarto.render.rPackageOutputDirectory": false
 }
