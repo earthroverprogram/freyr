@@ -1,9 +1,5 @@
 {
 	"name": "R (rocker/r-ver base)",
 	"image": "ghcr.io/rocker-org/devcontainer/geospatial:4.4",
-	"mounts": [
-		// Bind your Windows .gitconfig to the container's root home directory
-		"source=C:/Users/joejc/.gitconfig,target=/root/.gitconfig,type=bind,consistency=cached"
-	],
 	"postCreateCommand": "R -q -e 'renv::install()'"
 }
