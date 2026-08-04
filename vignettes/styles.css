@@ -1,0 +1,147 @@
+/* ==========================================================================
+   Quarto Custom CSS
+   ========================================================================== */
+
+/* General typography */
+body {
+    font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+/* Main content width */
+.quarto-container,
+#quarto-content {
+    max-width: 1000px;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+h1 {
+    border-bottom: 2px solid #dddddd;
+    padding-bottom: 0.3rem;
+}
+
+h2 {
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 0.2rem;
+}
+
+/* Paragraph spacing */
+p {
+    margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    border-collapse: collapse;
+}
+
+th {
+    background: #f5f5f5;
+    font-weight: 600;
+}
+
+th,
+td {
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #dddddd;
+}
+
+/* Code */
+code {
+    font-family: "JetBrains Mono", Consolas, monospace;
+    font-size: 0.9em;
+    background: #f7f7f7;
+    padding: 0.15rem 0.35rem;
+    border-radius: 4px;
+}
+
+pre {
+    border-radius: 8px;
+    padding: 1rem;
+    border: 1px solid #dddddd;
+    overflow-x: auto;
+}
+
+pre code {
+    background: none;
+    padding: 0;
+}
+
+/* Blockquotes */
+blockquote {
+    border-left: 4px solid #4c78a8;
+    padding-left: 1rem;
+    color: #555555;
+    margin-left: 0;
+}
+
+/* Images */
+img {
+    display: block;
+    margin: 1.5rem auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Figure captions */
+figcaption {
+    text-align: center;
+    color: #666666;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+/* Callouts */
+.callout {
+    border-radius: 8px;
+}
+
+/* Table of contents */
+#TOC {
+    font-size: 0.95rem;
+}
+
+#TOC a {
+    color: inherit;
+}
+
+/* Footnotes */
+.footnotes {
+    font-size: 0.9rem;
+    border-top: 1px solid #dddddd;
+    margin-top: 2rem;
+}
+
+/* Print */
+@media print {
+    body {
+        font-size: 11pt;
+    }
+
+    pre {
+        white-space: pre-wrap;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+}

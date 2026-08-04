@@ -5,6 +5,12 @@ format:
   html:
     toc: true
     code-fold: true
+    theme: cosmo
+    css: styles.css
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: true
 execute:
   echo: true
 ---
