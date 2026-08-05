@@ -1,5 +1,5 @@
 Package: freyr
-Title: What the Package Does (One Line, Title Case)
+Title: R repo template for reproducible research
 Version: 0.0.1
 Authors@R:
     person("Joe", "Collins", , "joejcollins@gmail.com",
@@ -11,14 +11,12 @@ Imports:
     devtools,
     dplyr,
     ggplot2,
-    leaflet,
     readr,
     renv,
     stringr,
     tibble,
     tidyr
     knitr,
-    rmarkdown,
-    quarto
+    rmarkdown
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 8.0.0

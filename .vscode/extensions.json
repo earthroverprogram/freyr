@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "charliermarsh.ruff",
+        "mechatroner.rainbow-csv",
+        "RDebugger.r-debugger",
+        "reditorsupport.r",
+        "streetsidesoftware.code-spell-checker",
+        "tamasfe.even-better-toml"
+    ]
+}

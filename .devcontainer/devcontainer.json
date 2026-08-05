@@ -1,5 +1,5 @@
 {
 	"name": "R (rocker/r-ver base)",
 	"image": "ghcr.io/rocker-org/devcontainer/r-ver:4",
-	"postCreateCommand": "R -q -e 'renv::install()'"
+	"postCreateCommand": ". ./.devcontainer/post_create.sh | tee /tmp/post_create_log.txt"
 }
