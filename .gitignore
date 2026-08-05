@@ -56,3 +56,4 @@ _output/
 *.log
 vignettes/**/*.pdf
 vignettes/**/*.tex
+**/*.quarto_ipynb

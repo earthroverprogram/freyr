@@ -16,11 +16,13 @@
         "rlang",
         "rmarkdown",
         "Roxygen",
+        "rsession",
         "Rstudio",
         "stringr",
         "testthat",
         "tibble",
         "tidyr",
-        "tidyverse"
+        "tidyverse",
+        "venv"
     ]
 }

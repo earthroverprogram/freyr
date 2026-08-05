@@ -14,7 +14,7 @@ lock:  # Install the packages in the DESCRIPTION and snapshot for the renv.lock
 .PHONY: r # because there is a directory called r.
 r:  # Run Rstudio server
 	@echo "https://127.0.0.1:8787/"
-	sudo su - rstudio -c 'rserver'
+	sudo rserver -server-daemonize=0
 
 test: renv # Run the R tests.
 	R -e "devtools::test()"
