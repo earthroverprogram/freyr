@@ -6,11 +6,20 @@
         "dplyr",
         "earthroverprogram",
         "ggplot",
+        "jsonlite",
+        "knitr",
         "mechatroner",
         "ORCID",
+        "readr",
         "reditorsupport",
+        "renv",
+        "rlang",
         "rmarkdown",
         "Roxygen",
+        "stringr",
+        "testthat",
+        "tibble",
+        "tidyr",
         "tidyverse"
     ]
 }
