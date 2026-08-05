@@ -2,7 +2,12 @@
   "files.exclude": {
     "snowflake.log": true,
     "vignettes/.quarto-preview": true
-},
-"quarto.render.previewType": "external",
-"quarto.render.rPackageOutputDirectory": false
+  },
+  "r.bracketedPaste": true,
+  "r.rpath.linux": "/usr/local/bin/R",
+  "[r]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false
+  },
 }

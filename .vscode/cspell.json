@@ -3,6 +3,11 @@
     "language": "en",
     "words": [
         "abcdefghijklmnopqrstuvwxyz",
+        "dplyr",
+        "ggplot",
+        "ORCID",
+        "rmarkdown",
+        "Roxygen",
         "tidyverse"
     ]
 }

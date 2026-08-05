@@ -1,5 +1,11 @@
 {
 	"name": "R for reproducible research",
 	"image": "ghcr.io/earthroverprogram/freyr:latest",
-	"postCreateCommand": ". ./.devcontainer/post_create.sh | tee /tmp/post_create_log.txt"
+	"postCreateCommand": ". ./.devcontainer/post_create.sh | tee /tmp/post_create_log.txt",
+	"remoteEnv": {
+		"GIT_CONFIG_GLOBAL": "/home/vscode/.gitconfig"
+	},
+	"mounts": [
+		"source=${localEnv:HOME}/.gitconfig,target=/home/vscode/.gitconfig,type=bind,consistency=cached"
+	]
 }
