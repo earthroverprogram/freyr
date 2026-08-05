@@ -13,8 +13,12 @@ RUN apt-get --quiet update \
 
 # Pre populate the renv cache with the packages we need.
 ENV RENV_PATHS_CACHE=/opt/renv/cache
-COPY renv.lock renv.lock
-RUN R -e "install.packages('renv'); renv::restore()"
+RUN mkdir -p /opt/renv/cache
+COPY renv.lock .
+COPY renv/ renv/
+COPY .Rprofile .
+RUN R -e "install.packages('renv')"
+RUN R -e "renv::restore(prompt = FALSE)"
 
 # Add some labels so it looks nice in Github packages.
 LABEL org.opencontainers.image.title="freyr"
