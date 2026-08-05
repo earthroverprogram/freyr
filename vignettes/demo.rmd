@@ -1,20 +1,8 @@
 ---
-title: "Exploring the Cars Dataset"
-author: "Joe Collins"
-format:
-  html:
-    toc: true
-    code-fold: true
-    theme: cosmo
-    css: styles.css
-  pdf:
-    toc: true
-    number-sections: true
-    colorlinks: true
-execute:
-  echo: true
+output:
+  html_document: default
+  pdf_document: default
 ---
-
 # Introduction
 
 The `cars` dataset is included with R. It contains the speed of cars and the distances taken to stop.
@@ -67,6 +55,6 @@ abline(model, col = "red", lwd = 2)
 
 The analysis suggests:
 
-- Stopping distance increases with speed.
-- A simple linear regression explains a substantial proportion of the variation.
-- The relationship is approximately linear.
+* Stopping distance increases with speed.
+* A simple linear regression explains a substantial proportion of the variation.
+* The relationship is approximately linear.

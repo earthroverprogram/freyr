@@ -23,6 +23,7 @@
         "tibble",
         "tidyr",
         "tidyverse",
+        "tinytex",
         "venv"
     ]
 }

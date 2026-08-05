@@ -18,6 +18,7 @@ Imports:
     stringr,
     tibble,
     tidyr
+    tinytex,
     knitr,
     rlang,
     rmarkdown
