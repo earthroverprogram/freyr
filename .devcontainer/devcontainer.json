@@ -1,5 +1,5 @@
 {
-	"name": "R (rocker/r-ver base)",
-	"image": "ghcr.io/rocker-org/devcontainer/r-ver:4",
+	"name": "R for reproducible research",
+	"image": "ghcr.io/earthroverprogram/freyr:latest",
 	"postCreateCommand": ". ./.devcontainer/post_create.sh | tee /tmp/post_create_log.txt"
 }

@@ -5,6 +5,12 @@ FROM ghcr.io/rocker-org/devcontainer/tidyverse:4.4
 RUN curl -LsSf https://astral.sh/uv/install.sh | sh \
     && cp /root/.local/bin/uv /usr/local/bin/uv
 
+# Install LaTeX and packages to support the R packages.
+RUN apt-get --quiet update \
+    && apt-get install --assume-yes cmake \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
 # Add some labels so it looks nice in Github packages.
 LABEL org.opencontainers.image.title="freyr"
 LABEL org.opencontainers.image.description="R for reproducible research"
