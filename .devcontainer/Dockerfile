@@ -1,5 +1,5 @@
 # Get a Rocker image (without LaTeX).
-FROM ghcr.io/rocker-org/devcontainer/tidyverse:4.6.0
+FROM ghcr.io/rocker-org/devcontainer/tidyverse:4.6
 
 # Install uv for everyone not just the current user.
 RUN curl -LsSf https://astral.sh/uv/install.sh | sh \
