@@ -19,6 +19,7 @@ COPY renv/activate.R renv/activate.R
 COPY .Rprofile .
 RUN Rscript -e "install.packages('renv', repos='https://cloud.r-project.org')"
 RUN Rscript -e "renv::restore(prompt = FALSE)"
+RUN Rscript -e "tinytex::install_tinytex()"
 
 # Add some labels so it looks nice in Github packages.
 LABEL org.opencontainers.image.title="freyr"

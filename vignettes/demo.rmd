@@ -5,7 +5,8 @@ output:
 ---
 # Introduction
 
-The `cars` dataset is included with R. It contains the speed of cars and the distances taken to stop.
+The `cars` dataset is included with R. It contains the speed of cars
+and the distances taken to stop.
 
 ## Load the data
 

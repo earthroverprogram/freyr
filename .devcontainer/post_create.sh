@@ -4,6 +4,7 @@ sudo bash -c 'cat << EOF >> /etc/rstudio/rserver.conf
 auth-none=1
 auth-minimum-user-id=0
 server-user=rstudio
+auth-default-user=rstudio
 EOF'
 
 # Set the log level for Rstudio

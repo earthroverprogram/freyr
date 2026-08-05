@@ -3,6 +3,7 @@
     "language": "en",
     "words": [
         "abcdefghijklmnopqrstuvwxyz",
+        "abline",
         "dplyr",
         "earthroverprogram",
         "ggplot",
@@ -16,6 +17,7 @@
         "rlang",
         "rmarkdown",
         "Roxygen",
+        "Rscript",
         "rsession",
         "Rstudio",
         "stringr",
@@ -24,6 +26,8 @@
         "tidyr",
         "tidyverse",
         "tinytex",
-        "venv"
+        "venv",
+        "xlab",
+        "ylab"
     ]
 }
