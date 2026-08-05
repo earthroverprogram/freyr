@@ -5,6 +5,16 @@
 	"remoteEnv": {
 		"GIT_CONFIG_GLOBAL": "/home/vscode/.gitconfig"
 	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+        "mechatroner.rainbow-csv",
+        "RDebugger.r-debugger",
+        "reditorsupport.r",
+        "streetsidesoftware.code-spell-checker"
+			]
+		}
+	},
 	"mounts": [
 		"source=${localEnv:HOME}/.gitconfig,target=/home/vscode/.gitconfig,type=bind,consistency=cached"
 	]
