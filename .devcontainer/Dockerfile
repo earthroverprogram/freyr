@@ -15,10 +15,11 @@ RUN apt-get --quiet update \
 ENV RENV_PATHS_CACHE=/opt/renv/cache
 RUN mkdir -p /opt/renv/cache
 COPY renv.lock .
-COPY renv/ renv/
+COPY renv/activate.R renv/activate.R
 COPY .Rprofile .
-RUN R -e "install.packages('renv')"
-RUN R -e "renv::restore(prompt = FALSE)"
+RUN Rscript -e "install.packages('renv', repos='https://cloud.r-project.org')"
+RUN Rscript -e "renv::restore(prompt = FALSE)"
+COPY . .
 
 # Add some labels so it looks nice in Github packages.
 LABEL org.opencontainers.image.title="freyr"
